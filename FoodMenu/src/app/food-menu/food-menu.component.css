@@ -1,0 +1,82 @@
+#additem
+{  
+    background-color:  rgb(200, 222, 245);
+    border: none;
+    width:120px;
+    height:40px;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+.table{
+    width:1470px;
+    border-collapse: collapse;
+    margin-left: 15px;
+    /* padding-top: 0%;
+    padding-left: 0%; */
+}
+.tr1{
+   
+    width:1480px;
+    height:110px;
+    background-color:  rgb(200, 222, 245);
+    border-collapse: collapse;
+    text-align: center;
+}
+.tr2{
+   
+    height:110px;
+    background-color: rgb(90, 104, 117);
+    border-collapse: collapse;
+    text-align: center;
+}
+.tr{
+   
+    height:80px;
+    background-color:  rgb(200, 222, 245);
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.tr5{
+   
+    height:100px;
+    background-color: greenyellow;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.tr5 tr:nth-child(even)
+{
+    background-color: pink;
+}
+body{
+    background-position: center;
+    background-color:rgb(32, 87, 143);
+    margin-top: -10px;
+    margin-bottom:0px;
+    margin-left: -8px;
+    margin-right:-7px;
+}
+*{
+    height: fit-content;
+}
+.form{
+    margin-left: 500px;
+    width: 500px;
+    height: 270px;
+    background-color:white;
+    text-align: center;
+    border: 2px solid black;
+}
+#submit{
+    width:100px;
+    height:30px;
+    background-color:  rgb(200, 222, 245);
+    border:2px solid black;
+    border-radius: 5px;
+}
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */

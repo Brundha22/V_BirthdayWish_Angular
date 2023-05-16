@@ -1,0 +1,97 @@
+<body>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <br/>
+<button id="additem" (click)="form()"> Add item </button>
+<br>
+<br>
+<form *ngIf="openform" class="form">
+    <br/>
+    <br/>
+    <label >Enter image url</label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="text"  [(ngModel)] = "newfoodmenu.image" name="foodmenusimage">
+    <br/>
+    <br/>
+    <label> Enter name </label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="text" style="margin-left:50px;" [(ngModel)] = "newfoodmenu.name" name="foodmenusname">
+    <br/>
+    <br/>
+    <label> Enter category </label> &nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="text" style="margin-left:50px;" [(ngModel)] = "newfoodmenu.category" name="foodmenuscategory">
+    <br/>
+    <br/>
+    <label> Enter price </label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <input type="text" style="margin-left:50px;" [(ngModel)] = "newfoodmenu.price" name="foodmenusprice">
+    <br/>
+    <br/>
+    <br/>
+    <button type="submit" id="submit" style="margin-left:100px;" (click)="add()"> Add Item </button><br>
+</form>
+<br/>
+    <br/>
+    <br/>
+    <br/>
+<table class="table">
+    <tr class="tr"> 
+        <td>Item Image</td>
+        <td>Item Name</td>
+        <td>Item Category</td>
+        <td>Price</td>
+        <td>Action</td>
+    </tr>
+    <br/>
+    <br/>
+    <ng-container *ngFor = "let items of foodmenus">
+        <tr class="tr1">
+        <td><img src="{{ items.image }}" width="130px" height="110px"></td>
+        <td>  {{ items.name }} </td>
+        <td>  {{ items.category }} </td>
+        <td>  {{items.price}} </td>
+        <td><fa-icon [icon]="editIcon" ></fa-icon>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<fa-icon [icon]="delIcon"></fa-icon></td>
+            <br/>
+    </tr>
+    </ng-container>
+    </table>
+    <!-- <tr class="tr2">
+        <td> <img src="assets/images/leg_nonveg.jpg" width="130px" height="110px"></td>
+        <td>Legpiece</td>
+        <td>Non Veg</td>
+        <td>150</td>
+        <td><fa-icon [icon]="editIcon" ></fa-icon>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<fa-icon [icon]="delIcon"></fa-icon></td>
+    </tr>
+    <br/>
+    <br/>
+    <tr class="tr1">
+        <td><img src="https://t3.ftcdn.net/jpg/04/44/43/86/360_F_444438681_2rUvqAOQZ3BwxEHlfrEneWpd26XFrt4P.jpg" width="130px" height="110px"></td>
+        <td>Chapathi</td>
+        <td>Veg</td>
+        <td>50</td>
+        <td><fa-icon [icon]="editIcon"></fa-icon>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<fa-icon [icon]="delIcon"></fa-icon></td>
+    </tr>
+    <br/>
+    <br/>
+    <tr class="tr2">
+        <td><img src="https://c.ndtvimg.com/2023-01/oqp7e4cg_mutton-curry_625x300_21_January_23.jpg?im=FeatureCrop,algorithm=dnn,width=620,height=350" width="130px" height="110px"></td>
+        <td>Mutton gravy</td>
+        <td>Non Veg</td>
+        <td>200</td>
+        <td><fa-icon [icon]="editIcon"></fa-icon>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<fa-icon [icon]="delIcon"></fa-icon></td>
+    </tr> -->
+
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+
+
+</body>
